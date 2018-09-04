@@ -58,9 +58,12 @@ export default class ToDoList extends Component {
 
         <ul>
           {this.state.list.map(val => (
-            <li type="text" onClick={() => this.deleteItemFromList({ val })}>
-              {val}{" "}
-            </li>
+            <div>
+              <li type="text">{val} </li>
+              <button onClick={() => this.deleteItemFromList({ val })}>
+                Delete
+              </button>
+            </div>
           ))}
         </ul>
       </div>
