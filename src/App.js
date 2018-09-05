@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
 import ToDoList from "./Components/ToDoList";
+import Edit from "./Components/Edit";
 
 class App extends Component {
   render() {
-    return <ToDoList />;
+    return (
+      <React.Fragment>
+        <ToDoList />
+        <Edit />
+      </React.Fragment>
+    );
   }
 }
 
